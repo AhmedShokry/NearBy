@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:id="@+id/recycler_layout"
+    android:layout_marginBottom="10dp"
+    android:padding="6dip">
+
+    <ImageView
+        android:id="@+id/recycler_image"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/cardview_dark_background"
+        android:layout_marginRight="6dip"
+        android:contentDescription="TODO"
+        android:scaleType="centerInside"
+        android:src="@drawable/defult_image" />
+
+    <TextView
+        android:id="@+id/recycler_place_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recycler_place_info"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/recycler_image"
+        android:gravity="left"
+        android:text="Example application"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/recycler_place_info"
+        android:layout_width="fill_parent"
+        android:layout_height="16dip"
+        android:layout_above="@+id/recycler_place_address"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/recycler_image"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text="Description"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/recycler_place_address"
+        android:layout_width="fill_parent"
+        android:layout_height="16dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/recycler_image"
+        android:ellipsize="marquee"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text="Description"
+        android:textSize="12sp" />
+
+
+</RelativeLayout>
